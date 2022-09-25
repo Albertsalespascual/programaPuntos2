@@ -8,28 +8,70 @@
     <title>Wallet</title>
 </head>
 <body>
-    <a href="/index.html" id="back">Atrás</a>
-    <section id="myWallet">
+ <a href="/index.html" id="back">Atrás</a>
+ <section id="myWallet">
         <img src="/public/img/Wallet-WF-152.ico" alt="Imagen cartera" id="wallet">
         <hr>
         <p id="apointsS">Wallet points:</p>
         <hr>
         <p id="apointsAmount">80</p>
-    </section>
-  <section class="student">
-    <article id="select">
-        <p>Selecciona compañer@</p>
-    </article>
-    <article class="s1"><img src="/public/img/Alba.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Alba</p></article>
-    <article class="s2"><img src="/public/img/Arantxa.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Arantxa</p></article>
-    <article class="s3"><img src="/public/img/Carla.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Carla</p></article>
-    <article class="s4"><img src="/public/img/Cristina.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Cristina</p></article>
-    <article class="s5"><img src="/public/img/Enrique.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Enrique</p></article>
-    <article class="s6"><img src="/public/img/Gregorio (1).jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Gregorio</p></article>
-    <article class="s7"><img src="/public/img/Juan.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Juan</p></article>
-    <article class="s8"><img src="/public/img/Miguel.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Miguel</p></article>
-    <article class="s9"><img src="/public/img/Oscar.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Oscar</p></article>
-    <article class="s10"><img src="/public/img/Yeray.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Yeray</p></article>
-  </section>
+ </section>
+ <div class="ContainerCenter">
+       <input type="radio" name="Carrusel" id="Slider1" checked>
+       <input type="radio" name="Carrusel" id="Slider2">
+       <input type="radio" name="Carrusel" id="Slider3">
+       
+       <div class="Carrusels">
+         <div class="Carrusel">
+           <section class="student">
+               <article id="select">
+                   <p>Selecciona compañer@</p>
+               </article>
+               <article class="s1"><img src="/public/img/Alba.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Alba</p></article>
+               <article class="s2"><img src="/public/img/Arantxa.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Arantxa</p></article>
+               <article class="s3"><img src="/public/img/Carla.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Carla</p></article>
+               <article class="s4"><img src="/public/img/Cristina.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Cristina</p></article>
+               <article class="s5"><img src="/public/img/Enrique.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Enrique</p></article>
+               <article class="s6"><img src="/public/img/Gregorio (1).jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Gregorio</p></article>
+               <article class="s7"><img src="/public/img/Juan.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Juan</p></article>
+               <article class="s8"><img src="/public/img/Miguel.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Miguel</p></article>
+               <article class="s9"><img src="/public/img/Oscar.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Oscar</p></article>
+               <article class="s10"><img src="/public/img/Yeray.jfif" alt="imagen de estudiante"><input type="radio" name="student"><p>Yeray</p></article>
+         </section>
+         </div> 
+         <div class="Carrusel">
+              <section class="number">
+                     <p>¿Cuántos puntos quieres darle?</p>
+                     <br>
+                     <input type="number" min="10" max="100" step="5">
+                     <p id="inputFoot">Introduce entre 10 y 100 puntos</p>
+                     <br>
+              </section>
+         </div>
+         <div class="Carrusel">
+              <section class="why">
+                     <p>Explica brevemente el movtivo</p>
+                     <textarea name="why" id="whyTxt" cols="30" rows="10"></textarea>
+                     <button type="submit">Enviar</button>
+                     <br>
+              </section>
+         </div>
+         
+         <label for="Slider3" class="ArrowLeft Arrow1"><p>❮</p></label>
+         <label for="Slider1" class="ArrowLeft Arrow2"><p>❮</p></label>
+         <label for="Slider2" class="ArrowLeft Arrow3"><p>❮</p></label>
+         
+         <label for="Slider2" class="ArrowRight Arrow1"><p>❯</p></label> 
+         <label for="Slider3" class="ArrowRight Arrow2"><p>❯</p></label>
+         <label for="Slider1" class="ArrowRight Arrow3"><p>❯</p></label>
+       </div>
+       
+       
+       <div class="Selectors">
+         <label for="Slider1" class="Selector"></label>
+         <label for="Slider2" class="Selector"></label>
+         <label for="Slider3" class="Selector"></label>
+       </div>
+     </div>
 </body>
 </html>
