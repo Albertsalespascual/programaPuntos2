@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+* {
+    font-family: "Heebo";
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    background-color: #669ae1;
+    /*background: url("/public/img/fondoWeb.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+#back {
+    margin-left: 2%;
+    color: #e0004d;
+}
+#messages {   
+    display: grid;
+    grid-template-columns: 10% 35% 35% 20%;
+    grid-template-rows: auto;    
+    width: 90%;
+    margin: 5% auto;
+    background-color: rgb(237,237,237,0.75);
+    box-shadow: 2px 2px 7px 1px black;
+    color: #071d49; 
+    
+    animation: myAnim 1s ease 0s 1 normal backwards;
+   }
+   @keyframes myAnim {
+     0% {
+       opacity: 0;
+       transform: scale(0.6);
+     }
+   
+     100% {
+       opacity: 1;
+       transform: scale(1);
+     }
+   }
+   .yourMsg {
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 2;
+     background-color: rgb(237,237,237,0.75);
+     padding-left: 6%;
+   }
+   .delete {
+     grid-column-start: 4;
+     grid-column-end: 5;
+     grid-row-start: 1;
+     grid-row-end: 2;
+     background-color: rgb(237,237,237,0.75);
+     padding-left: 3%;
+   }
+   .mi {
+     grid-column-start: 1;
+     grid-column-end: 2;
+   }
+   .msg1 {
+     grid-column-start: 2;
+     grid-column-end: 5;
+   }
+   .m2 {
+     grid-column-start: 1;
+     grid-column-end: 2;
+   }
+   .msg2 {
+     grid-column-start: 2;
+     grid-column-end: 5;
+   }
+   .m3 {
+     grid-column-start: 1;
+     grid-column-end: 2;
+ 
+   }
+   .msg3 {
+     grid-column-start: 2;
+     grid-column-end: 5;
+   }
+   .m4 {
+     grid-column-start: 1;
+     grid-column-end: 2;
+   }
+   .msg4 {
+     grid-column-start: 2;
+     grid-column-end: 5;
+   }
+   .m5 {
+     grid-column-start: 1;
+     grid-column-end: 2;
+   }
+   .msg5 {
+     grid-column-start: 2;
+     grid-column-end: 5;
+   }
+   .m6 {
+     grid-column-start: 1;
+     grid-column-end: 2;
+   }
+   .msg6 {
+     grid-column-start: 2;
+     grid-column-end: 5;
+   }
+
+   @media(min-width: 425px) {
+
+   }
+   @media(min-width: 768px) {
+    
+   }
