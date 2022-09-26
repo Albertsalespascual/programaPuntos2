@@ -106,8 +106,22 @@ body {
    }
 
    @media(min-width: 425px) {
-
+      #messages {
+        width: 80%;
+      }
    }
    @media(min-width: 768px) {
-    
+      #messages {
+        width: 70%;
+      }
+   }
+   @media(min-width: 1024px) {
+      #messages {
+        width: 50%;
+      }
+   }
+   @media(min-width: 1440px) {
+    #messages {
+      width: 30%;
+    }
    }

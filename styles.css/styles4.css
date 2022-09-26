@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+* {
+    font-family: "Heebo";
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    background-color: #fe4365;
+    /*background: url("/public/img/fondoWeb.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+#back {
+    margin-left: 2%;
+    color: #e0004d;
+}
+.main1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 10% 45%;
+    margin: 5% auto;
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    background-color: rgb(237,237,237,0.75);
+    width: 90%;
+    height: 250px;
+}
+.main1 label {
+  color: #b6666f;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+#textLevel {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 1em;
+    color: rgb(237,237,237);
+    font-weight: bold;
+    width: 6em;
+    height: 6em;
+    border: 0.1em rgb(7,29,73) solid;
+    border-radius: 50%;  
+    background:#e0004d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+#yourPoints {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: auto;
+}
+#amount {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: auto;
+}
+progress[value] {
+  margin-left: 98%;
+  margin-top: 5%;
+  width: 70%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: white;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: white;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #071d49;
+}
+
+progress[value]::-moz-progress-value {
+  background-color: #071d49;
+}
